@@ -4,30 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    
+
     <!-- Main styles -->
-    <link rel="stylesheet" href="css/style.css" type="text/css"> 
-    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    
+
     <!-- Fontawesome.io -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
-    
+
     <nav>
         <div class="nav-brand-icon-container">
             <img src="img/brand-icon.png" alt="">
         </div>
         <div class="nav-menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="nav-social-icons">
@@ -46,23 +45,74 @@
             <h1>Papa Loremo</h1>
         </div>
     </header>
-    
+
     <section id="about">
-        
-    </section>
-    
-    <section id="team">
-        
-    </section>
-    
-    <section id="menu">
-        
-    </section>
-    
-    <section id="contact">
-        
+        <div class="about-content">
+            <h1 class="section-header dark-text">About us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iure, molestias quis eum corporis et fuga?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae. Error nesciunt distinctio assumenda architecto, quidem temporibus mollitia iure recusandae. Error odit sit, suscipit maiores ullam incidunt blanditiis obcaecati!</p>
+            <p>Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae, ratione blanditiis cum numquam dolores, nesciunt saepe iste voluptates eum. Lorem ipsum dolor sit amet, illum, dolor placeat. Nostrum iure, molestias quis eum corporis et fuga?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, possimus id...</p>
+        </div>
+        <div class="about-img">
+            <img src="img/bg/aboutcopy.jpg" alt="">
+        </div>
     </section>
 
+    <!-- Team start -->
+    <section id="team">
+        <div class="team-content">
+            <h1 class="section-header dark-text">Our team</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dignissimos, esse impedit eius dolorum consequatur quos quisquam sit ratione veniam aliquam, facilis! Quidem aliquid repudiandae totam, sit ducimus quas nam voluptate quis? Placeat, omnis officiis dicta exercitationem fuga eos magnam assumenda!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque officia, eligendi assumenda ipsa.</p>
+            <div id="toggle-text">
+                <h3 id="toggle-napis" onclick="toggle()">&darr; Meet our team &darr;</h3>
+            </div>
+        </div>
+        <div class="team-img">
+            <img src="img/bg/team.jpg" alt="">
+        </div>
+    </section>
+    
+    <section id="team-members">
+        <figure class="single-team-member">
+            <div class="single-team-member-image">
+                <img src="img/team/1.jpeg" alt="">
+            </div>
+            <figcaption>
+                <h3>Lorem I. Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repellendus nostrum, dolor distinctio saepe optio animi id blanditiis, repellat veritatis sint!</p>
+            </figcaption>
+        </figure>
+        <figure class="single-team-member">
+            <div class="single-team-member-image">
+                <img src="img/team/2.jpeg" alt="">
+            </div>
+            <figcaption>
+                <h3>Lorem I. Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repellendus nostrum, dolor distinctio saepe optio animi id blanditiis, repellat veritatis sint!</p>
+            </figcaption>
+        </figure>
+        <figure class="single-team-member">
+            <div class="single-team-member-image">
+                <img src="img/team/4.jpeg" alt="">
+            </div>
+            <figcaption>
+                <h3>Lorem I. Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repellendus nostrum, dolor distinctio saepe optio animi id blanditiis, repellat veritatis sint!</p>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="menu">
+
+    </section>
+
+    <section id="contact">
+
+    </section>
+
+
+    <script src="js/team-toggle.js"></script>
 </body>
 
 </html>

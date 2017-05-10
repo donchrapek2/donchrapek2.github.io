@@ -6,6 +6,16 @@ body {
     margin: 0;
 }
 
+section {
+    padding: 11vh 10vw 11vh 10vw;
+}
+
+.section-header {
+    font-family: 'Handlee', cursive;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
 /* Navbar start */
 nav {
     position: fixed;
@@ -14,6 +24,7 @@ nav {
     background-color: rgba(0,0,0,0.7);
     height: 60px;
     padding: 0 10vw 0 10vw;
+    z-index: 1;
 }
 
 nav .nav-brand-icon-container {
@@ -55,7 +66,6 @@ nav .nav-menu ul li a {
 nav .nav-social-icons {
     display: inline-block;
     float: right;
-    opacity: 0.8;
 }
 
 nav .nav-social-icons button {
@@ -69,10 +79,20 @@ nav .nav-social-icons button {
 
 button.facebook {
     background-color: #3b5998;
+    opacity: 0.6;
 }
 
 button.instagram {
     background-color: #e95950;
+    opacity: 0.6;
+}
+
+button.facebook:hover {
+    opacity: 1;
+}
+
+button.instagram:hover {
+    opacity: 1;
 }
 
 nav .nav-social-icons button i {
@@ -83,10 +103,10 @@ nav .nav-social-icons button i {
 /* Header start */
 header {
     width: 100%;
-    height: 60vh;
+    height: 75vh;
     background-image: url('../img/bg/h1copy.jpg');
     background-size: cover;
-    padding: 18vh 0 0 10vw;
+    padding: 25vh 0 0 10vw;
 }
 
 header .header-content h1, header .header-content h2 {
@@ -104,3 +124,95 @@ header .header-content h2 {
     font-size: 4em;
 }
 /* Header stop */
+
+/* About start */
+#about {
+    background-color: rgb(255,255,204);
+}
+
+.about-content {
+    display: inline-block;
+    width: 40%;
+}
+
+.about-img {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+.about-img img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* About stop */
+
+/* Team start */
+#team {}
+
+.team-content {
+    float: right;
+    width: 50%;
+}
+
+.team-content p {
+    margin-bottom: 2em;
+}
+
+.team-img {
+    display: inline-block;
+    width: 40%;
+}
+
+.team-img img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+}
+
+.test {
+    width: 45%;
+    float: right;
+}
+
+#toggle-text {
+    text-align: center;
+}
+
+#toggle-text h3:hover {
+    cursor: pointer;
+}
+/* Team stop */
+
+/* Members start */
+#team-members {
+    text-align: center;
+    padding-top: 0;
+    display: none;
+}
+
+.single-team-member {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.single-team-member-image {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.single-team-member-image img {
+    max-height: 100%;
+    border-radius: 100%;
+    border: 5px solid rgba(255,255,204,0.9);
+}
+/* Members stop */
+
+/* Menu start */
+
+/* Menu stop */
