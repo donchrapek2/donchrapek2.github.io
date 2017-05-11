@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.text-light {
+    color: rgb(255,255,204);
+}
+
 section {
     padding: 11vh 10vw 11vh 10vw;
 }
@@ -261,6 +265,11 @@ header .header-content h2 {
 
 /* Contact start */
 #contact {
+    background-image: url('../img/bg/map.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(20,20,20);
+    background-blend-mode:multiply;
 }
 
 .contact-form {
@@ -279,6 +288,14 @@ input {
     height: 2.5em;
     margin-top: 1em;
     padding-left: 1em;
+    background-color: grey;
+    border: 0;
+}
+
+input[type="submit"] {
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 textarea {
@@ -286,6 +303,12 @@ textarea {
     height: 11.5em;
     margin-top: 1em;
     padding: 0 1em;
+    background-color: grey;
+    border: 0;
+}
+
+input::placeholder, textarea::placeholder {
+    color: black;
 }
 /* Contact stop */
 
