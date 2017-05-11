@@ -1,5 +1,4 @@
 function toggle() {
-    var napis = document.getElementById('toggle-napis');
     var members = document.getElementById('team-members');
     
     if (members.style.display === "none") {

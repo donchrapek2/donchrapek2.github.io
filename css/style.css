@@ -16,6 +16,19 @@ section {
     margin-top: 0;
 }
 
+.button {
+    width: 12vw;
+    height: 8vh;
+    border: 0;
+    background-color: rgb(242, 112, 82);
+    cursor: pointer;
+}
+
+.button h2 {
+    color: rgb(255,255,204);
+    font-size: 1.5em;
+    margin: 0;
+}
 /* Navbar start */
 nav {
     position: fixed;
@@ -61,6 +74,10 @@ nav .nav-menu ul li a {
     font-size: 1.7em;
     color: rgb(255,255,204);
     font-family: 'Handlee', cursive;
+}
+
+nav .nav-menu ul li a:hover {
+    font-weight: bold;
 }
 
 nav .nav-social-icons {
@@ -143,7 +160,7 @@ header .header-content h2 {
 
 .about-img img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
     -webkit-clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -168,7 +185,7 @@ header .header-content h2 {
 
 .team-img img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
     -webkit-clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
 }
@@ -214,5 +231,73 @@ header .header-content h2 {
 /* Members stop */
 
 /* Menu start */
+#menu {
+    background-color: rgb(255,255,204);
+}
 
+.menu-content {
+    display: inline-block;
+    width: 40%;
+}
+
+.menu-img {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+.menu-button-container {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.menu-img img {
+    max-width: 100%;
+    max-height: 300px;
+    -webkit-clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+}
 /* Menu stop */
+
+/* Contact start */
+#contact {
+}
+
+.contact-form {
+    display: inline-block;
+    float: left;
+    width: 49%;
+}
+
+.contact-map {
+    display: inline-block;
+    width: 49%;
+}
+
+input {
+    width: 75%;
+    height: 2.5em;
+    margin-top: 1em;
+    padding-left: 1em;
+}
+
+textarea {
+    width: 75%;
+    height: 11.5em;
+    margin-top: 1em;
+    padding: 0 1em;
+}
+/* Contact stop */
+
+/* Footer start */
+footer {
+    padding: 1em 10vw 1em 10vw;
+    background-color: #000;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+/* Footer stop */

@@ -49,8 +49,8 @@
     <section id="about">
         <div class="about-content">
             <h1 class="section-header dark-text">About us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iure, molestias quis eum corporis et fuga?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae. Error nesciunt distinctio assumenda architecto, quidem temporibus mollitia iure recusandae. Error odit sit, suscipit maiores ullam incidunt blanditiis obcaecati!</p>
-            <p>Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae, ratione blanditiis cum numquam dolores, nesciunt saepe iste voluptates eum. Lorem ipsum dolor sit amet, illum, dolor placeat. Nostrum iure, molestias quis eum corporis et fuga?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iure, molestias quis eum corporis et fuga? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae. </p>
+            <p>Non consequatur aliquam dolorem cumque alias tempore pariatur veritatis optio neque vitae, ratione blanditiis cum numquam dolores, nesciunt saepe iste voluptates eum. Nostrum iure, molestias quis eum corporis et fuga?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, possimus id...</p>
         </div>
         <div class="about-img">
@@ -65,7 +65,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dignissimos, esse impedit eius dolorum consequatur quos quisquam sit ratione veniam aliquam, facilis! Quidem aliquid repudiandae totam, sit ducimus quas nam voluptate quis? Placeat, omnis officiis dicta exercitationem fuga eos magnam assumenda!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque officia, eligendi assumenda ipsa.</p>
             <div id="toggle-text">
-                <h3 id="toggle-napis" onclick="toggle()">&darr; Meet our team &darr;</h3>
+                <button class="button"><h2 onclick="toggle()">Meet our team</h2></button>
             </div>
         </div>
         <div class="team-img">
@@ -104,15 +104,56 @@
     </section>
 
     <section id="menu">
-
+        <div class="menu-content">
+            <h1 class="section-header dark-text">Menu</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum nisi similique.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+            <div class="menu-button-container">
+                <button class="button"><h2>View menu</h2></button>
+            </div>
+        </div>
+        <div class="menu-img">
+            <img src="img/bg/menucopy.jpeg" alt="">
+        </div>
     </section>
 
     <section id="contact">
-
+        <div class="contact-form">
+            <h1 class="section-header">Contact us:</h1>
+            <form id="contact-form" action="">
+                <input type="name" id="name" placeholder="Name"><br/>
+                <input type="email" id="email" placeholder="Email"><br/>
+                <input type="phone" id="phone" placeholder="Phone number"><br/>
+                <textarea name="message" id="messgae" cols="30" rows="10" placeholder="Message"></textarea>
+            </form>
+        </div>
+        <div class="contact-map">
+            <h1 class="section-header">Find us:</h1>
+            <div id="map" style="width:100%;height:20em;"></div>
+        </div>
     </section>
+    
+    <footer>
+        <p>Copyright &copy;Daniel Chrapczyński 2017</p>
+    </footer>
 
 
     <script src="js/team-toggle.js"></script>
+    
+    <!-- Google Maps API script -->
+    <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 5};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0q5oeJXrAUhmfnhvmTiv94E4QjOqhgac&callback=myMap"></script>
+    
+    <script src="js/googleMapsHeightController.js"></script>
 </body>
 
 </html>
